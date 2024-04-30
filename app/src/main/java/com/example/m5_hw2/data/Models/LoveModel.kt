@@ -1,4 +1,4 @@
-package com.example.m5_hw2.Models
+package com.example.m5_hw2.data.Models
 
 import com.google.gson.annotations.SerializedName
 

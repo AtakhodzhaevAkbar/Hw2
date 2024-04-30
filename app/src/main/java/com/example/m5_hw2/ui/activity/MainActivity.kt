@@ -1,4 +1,4 @@
-package com.example.m5_hw2
+package com.example.m5_hw2.ui.activity
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge

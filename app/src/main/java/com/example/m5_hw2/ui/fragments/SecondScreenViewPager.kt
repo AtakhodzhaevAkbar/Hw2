@@ -1,4 +1,4 @@
-package com.example.m5_hw2.screens
+package com.example.m5_hw2.ui.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

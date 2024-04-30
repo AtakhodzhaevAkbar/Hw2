@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    tools:context="com.example.m5_hw2.screens.SecondScreenViewPager">
+    tools:context="com.example.m5_hw2.ui.fragments.SecondScreenViewPager">
     <TextView
     android:id="@+id/mainTxt"
     android:layout_width="wrap_content"

@@ -1,4 +1,4 @@
-package com.example.m5_hw2.screens
+package com.example.m5_hw2.ui.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -18,16 +18,13 @@ class FourthFragment : Fragment() {
         binding= FragmentFourthBinding.inflate(inflater,container,false)
         return binding.root
     }
-    // Ваш код в FourthFragment.kt
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        // Получение переданных данных из Bundle
-        val firstName = arguments?.getString("firstName")
-        val secondName = arguments?.getString("secondName")
+        val firstName = arguments?.getString("first_name")
+        val secondName = arguments?.getString("second_name")
         val percentage = arguments?.getString("percentage")
 
-        // Отображение данных
         binding.TVFname.text = firstName
         binding.TVSname.text = secondName
         binding.TVPercentage.text = percentage.toString()
