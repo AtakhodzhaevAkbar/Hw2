@@ -8,24 +8,24 @@ import androidx.fragment.app.Fragment
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.fragment.app.viewModels
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import com.example.hw2.R
 import com.example.hw2.databinding.FragmentThirdBinding
-import com.example.m5_hw2.data.Models.LoveModel
+import com.example.m5_hw2.data.network.Models.LoveModel
 import com.example.m5_hw2.RetrofitService
 import com.example.m5_hw2.ui.activity.MainViewModel
+import dagger.hilt.android.AndroidEntryPoint
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
+@AndroidEntryPoint
 class ThirdFragment : Fragment() {
     private lateinit var binding: FragmentThirdBinding
-    private val viewModel: MainViewModel by lazy {
-        ViewModelProvider(this)[MainViewModel::class.java]
-    }
-
+    private val viewModel by viewModels<MainViewModel>()
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?

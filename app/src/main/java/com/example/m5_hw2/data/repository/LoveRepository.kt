@@ -1,16 +1,19 @@
 package com.example.m5_hw2.data.repository
 
-import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import com.example.m5_hw2.RetrofitService
-import com.example.m5_hw2.data.Models.LoveModel
+import com.example.m5_hw2.data.network.LoveApiService
+import com.example.m5_hw2.data.network.Models.LoveModel
 import com.example.m5_hw2.utils.Constants
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
+import javax.inject.Inject
 
-class LoveRepository {
-    private val api = RetrofitService.api
+class LoveRepository @Inject constructor(
+    private val api:LoveApiService
+) {
+
     private val lovePercentageLv = MutableLiveData<LoveModel?>()
     fun getLovePercentage(firstName: String, secondName: String): MutableLiveData<LoveModel?> {
         api.getPercentage(
@@ -22,6 +25,7 @@ class LoveRepository {
             override fun onResponse(p0: Call<LoveModel>, response: Response<LoveModel>) {
                 if (response.isSuccessful && response.body() != null) {
                     lovePercentageLv.postValue(response.body())
+
                 }
             }
 

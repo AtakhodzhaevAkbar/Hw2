@@ -1,6 +1,7 @@
-package com.example.m5_hw2.data.Models
+package com.example.m5_hw2.data.network.Models
 
 import com.google.gson.annotations.SerializedName
+
 
 class LoveModel (
     @SerializedName("fname")

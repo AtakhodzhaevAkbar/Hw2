@@ -8,10 +8,10 @@ import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.example.hw2.R
 import com.example.hw2.databinding.FragmentFirstScreenBinding
+import dagger.hilt.android.AndroidEntryPoint
 
 
-
-
+@AndroidEntryPoint
 class FirstScreen : Fragment() {
     private lateinit var binding: FragmentFirstScreenBinding
 

@@ -6,8 +6,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.hw2.databinding.FragmentFourthBinding
+import dagger.hilt.android.AndroidEntryPoint
 
 
+@AndroidEntryPoint
 
 class FourthFragment : Fragment() {
     private lateinit var binding: FragmentFourthBinding

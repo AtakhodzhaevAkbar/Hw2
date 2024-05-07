@@ -1,7 +1,7 @@
-package com.example.m5_hw2
+package com.example.m5_hw2.data.network
 
 
-import com.example.m5_hw2.data.Models.LoveModel
+import com.example.m5_hw2.data.network.Models.LoveModel
 import retrofit2.http.GET
 import retrofit2.http.Header
 import retrofit2.http.Query

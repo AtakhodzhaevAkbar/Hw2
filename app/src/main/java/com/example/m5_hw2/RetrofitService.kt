@@ -1,5 +1,6 @@
 package com.example.m5_hw2
 
+import com.example.m5_hw2.data.network.LoveApiService
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
