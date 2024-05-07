@@ -13,7 +13,7 @@ import com.example.hw2.databinding.FragmentSecondScreenBinding
 import com.example.m5_hw2.adapter.ViewPagerAdapter
 import dagger.hilt.android.AndroidEntryPoint
 
-@AndroidEntryPoint
+
 class SecondScreen : Fragment() {
     private lateinit var binding: FragmentSecondScreenBinding
 

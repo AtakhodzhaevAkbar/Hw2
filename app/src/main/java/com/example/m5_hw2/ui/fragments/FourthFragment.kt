@@ -5,12 +5,14 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
+import com.example.hw2.R
 import com.example.hw2.databinding.FragmentFourthBinding
 import dagger.hilt.android.AndroidEntryPoint
 
 
-@AndroidEntryPoint
 
+@AndroidEntryPoint
 class FourthFragment : Fragment() {
     private lateinit var binding: FragmentFourthBinding
     override fun onCreateView(
@@ -30,6 +32,9 @@ class FourthFragment : Fragment() {
         binding.TVFname.text = firstName
         binding.TVSname.text = secondName
         binding.TVPercentage.text = percentage.toString()
+        binding.btnContinue.setOnClickListener {
+            findNavController().navigate(R.id.action_fourthFragment_to_fifthFragment)
+        }
     }
 
 }

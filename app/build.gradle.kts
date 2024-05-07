@@ -50,6 +50,7 @@ dependencies {
 
     implementation(libs.androidx.navigation.fragment.ktx)
     implementation(libs.androidx.navigation.ui.ktx)
+    implementation(libs.androidx.ui.android)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
@@ -61,8 +62,14 @@ dependencies {
     implementation(libs.androidx.room.runtime)
     annotationProcessor(libs.androidx.room.compiler)
     kapt(libs.androidx.room.compiler)
+    implementation(libs.androidx.room.ktx)
+
 
     implementation("com.google.dagger:hilt-android:2.51.1")
     kapt("com.google.dagger:hilt-android-compiler:2.51.1")
+
+    implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.7.0")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0")
+
 
 }

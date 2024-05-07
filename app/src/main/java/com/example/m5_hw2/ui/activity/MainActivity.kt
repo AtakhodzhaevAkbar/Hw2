@@ -7,6 +7,8 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.hw2.R
 import com.example.hw2.databinding.ActivityMainBinding
+import com.example.m5_hw2.data.local.dao.LoveDao
+import com.example.m5_hw2.data.repository.LoveRepository
 import dagger.hilt.android.AndroidEntryPoint
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
@@ -15,6 +17,5 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
         }
     }
